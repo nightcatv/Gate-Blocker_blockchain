@@ -1,0 +1,2 @@
+loadScript('./solc/contract_compile.js');
+loadScript('./solc/login.js');

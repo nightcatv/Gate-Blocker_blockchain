@@ -1,0 +1,4 @@
+cd solc
+echo "var authOutput = `solc --optimize --combined-json abi,bin,interface Auth.sol`;" > contract_compile.js
+cd ..
+geth --datadir "./db" --rpc --rpcaddr=0.0.0.0 --rpcport 8545 --rpccorsdomain "*" --rpcapi "eth,net,web3,personal,admin,shh,txpool,debug,miner" --nodiscover --maxpeers 30 --networkid 1981 --port 30303 --etherbase "0xeb680f30715f347d4eb5cd03ac5eced297ac5046" --allow-insecure-unlock console
