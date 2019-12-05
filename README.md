@@ -17,3 +17,8 @@ $ ./init
 ```shell
 $ ./start_up
 ```
+### Contract Deploy
+* While start up the blockchain, then use the folloing instruction to deploy the contract
+```shell
+> loadScript('load')
+```
