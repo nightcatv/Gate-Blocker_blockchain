@@ -1,2 +1,3 @@
-loadScript('./solc/contract_compile.js');
-loadScript('./solc/login.js');
+loadScript('./scripts/contract_compile.js');
+loadScript('./scripts/contract_deploy.js');
+loadScript('./scripts/login.js');
