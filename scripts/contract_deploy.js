@@ -1,7 +1,7 @@
 var authcontractAbi, authContract, authBinCode;
 var deployTransactionObject, authInstance, authAddress, auth;
 
-export function contractDefine(){
+function contractDefine(){
 	/*
 	Define the variable for the contract.
 	*/
@@ -12,7 +12,7 @@ export function contractDefine(){
 	authBinCode = "0x" + authOutput.contracts['Auth.sol:GateBlockerAuth'].bin;
 }
 
-export function contractDeploy(account, password){
+function contractDeploy(account, password){
     	/*
 	Deploy the contract the corresponding account.
 
@@ -33,7 +33,7 @@ export function contractDeploy(account, password){
 	auth = authContract.at(authAddress);
 }
 
-export function loginRecord(account, password, faceid){
+function loginRecord(account, password, faceid){
     	/*
 	Record the login time.
 
@@ -61,7 +61,7 @@ function mine(){
     	miner.stop();
 }
 
-export function getResult(){
+function getResult(){
 	auth.getTime.call();
 	auth.getID.call();
 	auth.getDoorStatus.call();
