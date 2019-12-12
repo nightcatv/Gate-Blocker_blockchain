@@ -56,6 +56,7 @@ function mine(){
 	*/
 	
 	// Start mining with single processor and stop mining as soon as mined a block.
+	miner.setEtherbase(blockchain_account);
 	miner.start(1);
     	admin.sleepBlocks(1);
     	miner.stop();
