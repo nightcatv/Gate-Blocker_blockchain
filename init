@@ -1,2 +1,2 @@
 mkdir db
-sudo geth --datadir "./db" init genesis.json
+sudo geth --datadir "./db" init "./genesis.json"
